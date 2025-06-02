@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+/* estilos.css - Tema verde para IbilCharge */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e8f5e9; /* Verde muy claro */
+  color: #1b5e20; /* Verde oscuro */
+  padding: 40px;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #2e7d32; /* Verde medio */
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 450px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #a5d6a7;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+  margin-top: 20px;
+  width: 48%;
+  padding: 10px;
+  border: none;
+  background-color: #2e7d32;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: #81c784;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  opacity: 0.9;
+}
+
+.error-msg {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.menu button {
+  width: 200px;
+  margin: 10px auto;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 80%;
+}
+
+th, td {
+  padding: 10px 15px;
+  border: 1px solid #388e3c;
+  text-align: center;
+}
+
+th {
+  background-color: #388e3c;
+  color: white;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #1b5e20;
+}
+
+.return-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Verde base */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+    background-color: #388E3C; /* Verde más oscuro al pasar el ratón */
+}
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 60px;
+}
+
+h1 {
+    color: #2ecc71; /* Verde */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #27ae60;
+}
+
+.boton-verde {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-verde:hover {
+    background-color: #218838;
+}
+
+/* Botón ROJO: Desactivar cargador */
+.boton-rojo {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-rojo:hover {
+    background-color: #c82333;
+}
+
+/* Botón GRIS: sin reserva activa (deshabilitado) */
+.boton-desactivado {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
