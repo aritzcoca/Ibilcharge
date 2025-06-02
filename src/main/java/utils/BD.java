@@ -8,10 +8,11 @@ package utils;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Map;
 
 /**
  *
- * @author MCO
+ * @author aritz
  */
 public class BD {
 
@@ -22,8 +23,14 @@ public class BD {
         if (conn == null) {
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
+                Map<String, String> mapa = System.getenv();
+                String host = mapa.getOrDefault("DB_HOST", "localhost");
+                String port = mapa.getOrDefault("DB_PORT", "3306");
+                String dbName = mapa.getOrDefault("DB_NAME", "bdcargador");
+                String dbUser = mapa.getOrDefault("DB_USER", "root");
+                String dbPassword = mapa.getOrDefault("DB_PASSWORD", "root");
                 //conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdactivityxx", "root", "root");
-                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdcargador?serverTimezone=UTC", "root", "root");
+                conn = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/"+dbName, dbUser, dbPassword);
                 System.out.println("Se ha conectado.");
             } catch (ClassNotFoundException ex1) {
                 System.out.println("No se ha conectado: " + ex1);

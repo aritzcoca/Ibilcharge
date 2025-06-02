@@ -47,8 +47,12 @@ public class Activar extends HttpServlet {
     String nuevoEstado = accion.equals("activar") ? "ON" : "OFF";
     
     OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
+    
+    Map<String, String> mapa = System.getenv();
+    String url = mapa.getOrDefault("OCPP_URL", "http://ocpp:5000");
+    
     Retrofit retrofit = new Retrofit.Builder()
-        .baseUrl("http://158.227.232.206:5000")
+        .baseUrl(url)
         .addConverterFactory(GsonConverterFactory.create())
         .client(httpClient.build())
         .build();
